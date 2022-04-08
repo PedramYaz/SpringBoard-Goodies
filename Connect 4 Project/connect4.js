@@ -1,4 +1,5 @@
 /** Connect Four
+ * new file
  *
  * Player 1 and 2 alternate turns. On each turn, a piece is dropped down a
  * column until a player gets four-in-a-row (horiz, vert, or diag) or until
@@ -38,7 +39,7 @@ function makeHtmlBoard() {
     top.append(headCell);
   }
 
-// creating a function called makeHtmlBoard, where we create a variable called board that receives the element with the ID of 'board' from the HTML file. We than create another variable called top that creates a table row. We than add an attribute to the top variable we created, addking 'id' and 'column-top' to the id attribute list. After we add an eventListener that listens for a click in that top section. Once the eventListener triggers, a for loop is ran which creates 'table data' and sets the attribute of 'id' and the x location of the players pieces. We than append the headCell into the top.
+  // creating a function called makeHtmlBoard, where we create a variable called board that receives the element with the ID of 'board' from the HTML file. We than create another variable called top that creates a table row. We than add an attribute to the top variable we created, addking 'id' and 'column-top' to the id attribute list. After we add an eventListener that listens for a click in that top section. Once the eventListener triggers, a for loop is ran which creates 'table data' and sets the attribute of 'id' and the x location of the players pieces. We than append the headCell into the top.
 
   board.append(top);
 
@@ -55,7 +56,6 @@ function makeHtmlBoard() {
   }
 }
 // as long as y is less than height, run the 'for let loop' and within in we are creating a variable called row that creates a table row. Within the initial 'for let loop' we have another that as long as x is less than the width, add one. We create a variable that makes a table data element that has a set attribute of "id" and the players. We than append the cell in the row and append the row into the board.
-
 
 /** findSpotForCol: given column x, return top empty y (null if filled) */
 

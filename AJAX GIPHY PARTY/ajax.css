@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(34, 31, 31);
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+#remove {
+  background-color: red;
+  height: 40px;
+  width: 150px;
+  /* border-radius: 10px; */
+  color: white;
+}
+#searchGiphy {
+  background-color: rgb(59, 55, 55);
+  height: 40px;
+  width: 150px;
+  /* border-radius: 10px; */
+  color: white;
+}
+#search {
+  height: 35px;
+  width: 150px;
+}
+#container {
+  text-align: center;
+}

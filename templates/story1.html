@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Madlib Home Page{% endblock %}
+{% block content %}
+<h1>Welcome to the madlib game</h1>
+<form action="/story1-solution">
+    <p>Place: <input type="text" name="place"></p>
+    <p>Noun: <input type="text" name="noun"></p>
+    <p>Verb: <input type="text" name="verb"></p>
+    <p>Adjective: <input type="text" name="adj"></p>
+    <p>Plural noun: <input type="text" name="p_noun"></p>
+    <button>Fill out the story!</button>
+</form>
+{% endblock %}

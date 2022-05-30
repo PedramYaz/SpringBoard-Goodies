@@ -1,4 +1,4 @@
-#!/Users/pedramyazdani/Desktop/SpringBoard-Goodies/flask-blogly-p2/venv/bin/python3
+#!/Users/pedramyazdani/Desktop/SpringBoard-Goodies/flask-blogly-p2/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

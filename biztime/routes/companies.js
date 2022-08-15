@@ -16,6 +16,27 @@ router.get("", async function (res, res, next) {
   }
 });
 
+router.get("/industry/:code", async function (req, res, next) {
+  try {
+    const result = await db.query(
+      `SELECT c.code, c.name, c.description, i.industry
+        FROM companies AS c
+          LEFT JOIN company_industry AS ci
+            ON c.code = ci.company_code
+          LEFT JOIN industries AS i ON ci.industry_code = i.code
+        WHERE c.code = $1`,
+      [req.params.code]
+    );
+
+    let { code, name, description } = result.rows[0];
+    let industries = result.rows.map((r) => r.industry);
+
+    return res.json({ code, name, description, industries });
+  } catch (err) {
+    return next(err);
+  }
+});
+
 router.get("/:code", async function (req, res, next) {
   try {
     let code = req.params.code;
